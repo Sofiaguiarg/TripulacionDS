@@ -1,0 +1,15 @@
+API de generación de imágenes
+Esta API permite crear imágenes a partir de textos dados por el usuario. La API utiliza un modelo de inteligencia artificial que genera imágenes realistas y creativas basadas en el texto. Es fácil de usar y solo requiere enviar un parámetro llamado prompt con el texto deseado. 
+La API devuelve dos imágenes en formato PNG.
+
+Detalles técnicos de la API:
+
+URL: https://flask-production-782a.up.railway.app/image
+Método: POST
+Parámetros:
+prompt: El texto que se quiere convertir en imagen.
+Respuesta: Una imagen generada a partir del texto del parámetro prompt.
+
+Ejemplo: 
+Promt: “Hola Mundo”
+Respuesta: 
