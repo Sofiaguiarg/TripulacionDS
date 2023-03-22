@@ -1,0 +1,26 @@
+Descripción de la API de detección de lenguaje inapropiado
+
+Esta API permite analizar textos dados por el usuario y detectar si contienen palabras o expresiones inapropiadas, en español. La API utiliza un modelo de inteligencia artificial que clasifica los textos según su grado de inapropiedad y devuelve una lista de las palabras ofensivas encontradas. 
+Sólo requiere enviar un parámetro llamado text con el texto deseado. La API devuelve un objeto JSON con el texto original, las palabras inapropiadas y un score entre 0 y 1 que indica el nivel de inapropiedad del texto. 
+La API es útil para moderar el contenido de redes sociales, foros, comentarios o chats.
+
+Detalles técnicos de la API
+
+URL: https://flask-production-782a.up.railway.app/bad-lenguage
+Método: POST
+Parámetros:
+text: El texto que se quiere analizar.
+
+Respuesta: Un objeto JSON con los siguientes campos:
+text: El texto original.
+bad_words: Una lista de las palabras inapropiadas encontradas en el texto.
+score: Un número entre 0 y 1 que indica el grado de inapropiedad del texto.
+
+Ejemplo:
+Parámetro text: “perro jugando poker en el rio”
+Respuesta:
+{
+  "text": "perro jugando poker en el rio",
+  "bad_words": [],
+  "score": 0.0
+}
